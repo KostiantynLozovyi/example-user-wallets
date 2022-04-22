@@ -16,6 +16,6 @@ export async function checkIBAN(IBAN) {
     const data = await response.json();
     return data.iban;
   } catch {
-    return false;
+    return alert("Invalid IBAN");
   }
 }

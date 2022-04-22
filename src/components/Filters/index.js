@@ -10,7 +10,6 @@ function getMaxBalance(items) {
 export default function Filters(props) {
   const { setItems, originalItems, items, setSearch, search } = props;
 
-
   const [filterBalanceFrom, setFilterBalanceFrom] = useState(0);
   const [filterBalanceTo, setFilterBalanceTo] = useState(
     getMaxBalance(originalItems)
@@ -20,13 +19,12 @@ export default function Filters(props) {
     const balanceFrom = filterBalanceFrom || 0;
     const balanceTo = filterBalanceTo || getMaxBalance(originalItems);
 
-    const filteredItems = search.filter(
+    const filteredItems = [...search].filter(
       (item) => balanceFrom <= item.balance && item.balance <= balanceTo
     );
 
     setItems(filteredItems);
-    console.log(search);
-  }, [filterBalanceFrom, filterBalanceTo, originalItems,setItems, search]);
+  }, [filterBalanceFrom, filterBalanceTo, originalItems, setItems, search]);
 
   useEffect(() => {
     setFilterBalanceTo(getMaxBalance(originalItems));
@@ -34,7 +32,7 @@ export default function Filters(props) {
 
   function handleIBANSearch(e) {
     if (e.currentTarget.value) {
-      const filteredItems = items.filter((item) =>
+      const filteredItems = [...items].filter((item) =>
         item.IBAN.toLowerCase().includes(e.currentTarget.value.toLowerCase())
       );
       setSearch(filteredItems);

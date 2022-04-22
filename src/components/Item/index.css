@@ -7,8 +7,8 @@
 
     border-bottom: 1px solid green;
 
+    margin: 5px 0;
 }
-
 
 .balance {
     width: 40%;
@@ -27,6 +27,6 @@
     justify-content: flex-end;
     width: 15%;
 
-    font-family: 'Josefin Sans',sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-weight: 500;
 }

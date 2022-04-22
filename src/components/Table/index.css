@@ -21,6 +21,7 @@
 
 .table-header-ID {
     width: 5%;
+    pointer-events: none;
 }
 
 .table-header-IBAN {
@@ -49,8 +50,6 @@
     align-content: center;
     justify-content: center;
 }
-
-
 
 .header {
     display: flex;
