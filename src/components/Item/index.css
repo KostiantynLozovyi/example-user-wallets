@@ -1,0 +1,32 @@
+.item {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    border-bottom: 1px solid green;
+
+}
+
+
+.balance {
+    width: 40%;
+}
+
+.IBAN {
+    width: 40%;
+}
+
+.ID {
+    width: 5%;
+}
+
+.action {
+    display: flex;
+    justify-content: flex-end;
+    width: 15%;
+
+    font-family: 'Josefin Sans',sans-serif;
+    font-weight: 500;
+}

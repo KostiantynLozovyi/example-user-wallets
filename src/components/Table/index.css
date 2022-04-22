@@ -1,0 +1,69 @@
+.table {
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+    padding: 10px;
+}
+
+.iban-wrapper {
+    display: flex;
+}
+
+.table-header-item {
+    display: flex;
+
+    margin-right: 5px;
+    cursor: pointer;
+    font-family: 'Josefin Sans',sans-serif;
+    font-weight: 500;
+}
+
+.table-header-ID {
+    width: 5%;
+}
+
+.table-header-IBAN {
+    width: 40%;
+}
+
+.table-header-Balance {
+    width: 40%;
+}
+
+.table-header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 10px;
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.arrowUp {
+    width: 15px;
+    height: 15px;
+}
+
+.arrowDown {
+    width: 15px;
+    height: 15px;
+}

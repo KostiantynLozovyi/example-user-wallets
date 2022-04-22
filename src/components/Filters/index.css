@@ -1,0 +1,23 @@
+.filters {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.filter {
+    margin-bottom: 15px;
+}
+
+.filters-label {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+    margin: auto;
+}
+
+.filters-content {
+    margin-top: 10px;
+    border: 2px solid green;
+    padding: 10px;
+}
