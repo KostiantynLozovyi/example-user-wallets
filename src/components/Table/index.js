@@ -14,11 +14,13 @@ function itemsIncludeIBAN(items, IBAN) {
 export default function Table() {
   const [items, setItems] = useState([]);
   const [filteredItems, setFilteredItems] = useState([]);
+  const [search, setSearch] = useState([]);
   const [IBAN, setIBAN] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     setFilteredItems(items);
+    setSearch(items);
   }, [items]);
 
   function handleChange(e) {
@@ -68,6 +70,8 @@ export default function Table() {
         <div>
           {!!items.length && (
             <Filters
+              search={search}
+              setSearch={setSearch}
               items={filteredItems}
               setItems={setFilteredItems}
               originalItems={items}
